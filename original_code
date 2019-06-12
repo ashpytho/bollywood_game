@@ -1,0 +1,1407 @@
+#include<iostream.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<stdio.h>
+#include<process.h>
+void main()
+{clrscr();
+ int q,count=0,cp=0,i;
+ char zp,m,l;
+char str[2];
+ char stk[2];
+ cout<<  "\n------------------------------ASHISH GUPTA PRESENTS----------------------------\n";
+gotoxy(7,5);
+ cout<<"\n\n\n\n\n                    T H E    B O L L Y W O O D    G U E S S \n";
+
+ cout<<"\n\n\n\n\n\n\n\n\n\t\t\t   Press any key to start : ";
+ gets(str);
+ clrscr();
+ start:
+ cp=0;
+ count=0;
+ clrscr();
+ cout<<"\t\t\t    M A I N  M E N U ";
+ cout<<"\n\nChoose any one option  : ";
+ cout<<"\n\n1.PLAY\n\n2.HOW TO PLAY\n\n3.CREDIT\n\n4.SETTINGS\n\n5.EXIT\n";
+ cin>>q;
+ switch(q)
+
+ {   case 1:
+	    clrscr();
+	    cout<<"YOUR FIRST MOVIE IS ";
+	    cout<<"\t\t\t\t\t  POINTS"<<" : "<<cp;
+	    cout<<"\n\n\t\tT __ J __  __  B";
+
+
+first:
+
+	    cout<<"\n\nENTER THE  BLANK  : ";
+	    cin>>m;
+	    if(m=='e'||m=='E')
+	     { cp++;
+	       clrscr();
+	       goto f1;	 }
+
+	    else
+	     {cout<<"\n Wrong one sorry";
+	       count++;
+
+	      if(count>5)
+	      { goto start; }
+
+	       else
+		{goto first;} }
+
+f1  :
+
+	    cout<<"\n\t\tT E J __ __  B";
+	    cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+f2  :	    cout<<"\n\nENTER THE  BLANK  : ";
+	    cin>>m;
+	    if(m=='a'||m=='A')
+	    { clrscr();
+	      cp++;
+	      cout<<"YOU GOT THAT RIGHT MOVIE IS";
+	      cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+	      cout<<"\n\n\n\t\t\t       T E J A A B";
+	      cout<<"\n\n\n\t\tPress Y to continue or N to exit ";
+	      cin>>l;
+	      if(l=='y'||l=='Y')
+	      {goto second;}
+	      else
+	      {goto start;}   }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	      count++;
+		if(count>5)
+		  { goto start; }
+
+		else
+		   {goto f2;}}
+
+
+second:     count=0;
+	    clrscr();
+	    cout<<"\n YOUR MOVIE IS ";
+	    cout<<"\t\t\t\t\t        POINTS"<<" : "<<cp;
+	    cout<<"\n\n\t\t S __ O __  A __ ";
+s1:
+
+	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='h'||m=='H')
+	    {    clrscr();
+
+		 cp++;
+		 goto s2;	 }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	      count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto s1;} }
+
+s2:
+	    cout<<"\n\t\tS H O __ A __";
+	    cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+
+s3:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='L'||m=='l')
+	    {  clrscr();
+	       cp++;
+	       goto s4;		  }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto s3;}}
+
+s4 :
+
+	    cout<<"\n\t\tS H O L A __";
+	    cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+s5:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='y'||m=='Y')
+	    { clrscr();
+	      cp++;
+	      cout<<"\nYOU GOT THAT RIGHT THE MOVIE IS";
+	      cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+	      cout<<"\n\n\n\t\t\t    S H O L A Y";
+	      cout<<"\n\n\n\t\tPress Y to continue or N to exit ";
+	      cin>>l;
+	      if(l=='y'||l=='Y')
+	      {goto third;}
+	      else
+	      {goto start;}
+
+				    }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>=5)
+	      { goto start; }
+
+	    else
+		{goto s5;}}
+
+
+third:      count=0;
+	    clrscr();
+	    cout<<"\n YOUR MOVIE IS ";
+	    cout<<"\t\t\t\t\t        POINTS"<<" : "<<cp;
+	    cout<<"\n\t\tP __ I R /H E__ __ /P__ E R __";
+t1:
+
+	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='h'||m=='H')
+	    {    clrscr();
+
+		 cp++;
+		 goto t2;	 }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	      count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto t1;} }
+
+t2:
+	    cout<<"\nP H I R /H E __ __ /P H E R __";
+	    cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+
+t3:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='r'||m=='R')
+	    {
+	       clrscr();
+	       cp++;
+	       goto t4;		  }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto t3;}}
+t4 :
+
+	    cout<<"\nP H I R /H E R __ /P H E R __";
+	    cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+t5:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='a'||m=='A')
+	    { clrscr();
+	      cp++;
+	      goto t6;}
+
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto t5;}}
+
+
+t6 :
+
+	    cout<<"\nP H I R /H E R A /P H E R __";
+	    cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+t7:
+	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='i'||m=='I')
+	    { clrscr();
+	      cp++;
+	      cout<<"\nYOU GOT THAT RIGHT THE MOVIE IS";
+	      cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+	      cout<<"\n\n\n\t\t P H I R /H E R A /P H E R I";
+	      cout<<"\n\n\n\t\t\tPress Y to continue or N to exit ";
+	      cin>>l;
+		if(l=='y'||l=='Y')
+		 {goto fourth;}
+		else
+		 {goto start;}   }
+
+	  else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto t7;}}
+
+
+
+fourth:      count=0;
+	    clrscr();
+	    cout<<"\nYOUR MOVIE IS ";
+	     cout<<"\t\t\t\t\t\tPOINTS"<<" : "<<cp;
+	    cout<<"\n\n      K __ __/K I __/K __ /";
+	    cout<<" \n\t\t\t       P Y __ __ R/K A __ __ O N";
+fo1 :
+
+	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='i'||m=='I')
+	    {    clrscr();
+
+		 cp++;
+		 goto fo2;	 }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	      count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto fo1;} }
+
+fo2:
+	    cout<<"\n K I __ /K I __/K __ /";
+	    cout<<"\t\t\t\t\t POINTS"<<" : "<<cp;
+	    cout<<" \n      P Y __ __ R/K A __ __ O N";
+
+fo3:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='s'||m=='S')
+	    {
+	       clrscr();
+	       cp++;
+	       goto fo4;		  }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto fo3;}}
+fo4 :
+
+	    cout<<"\n K I S/K I S /K __ /";
+	    cout<<"\t\t\t\t\t POINTS"<<" : "<<cp;
+	    cout<<" \n      P Y __ __ R/K A __ __ O N";
+
+fo5:	    cout<<"\n\nENTER THE  BLANK  : ";
+	    cin>>m;
+	    if(m=='o'||m=='O')
+	    { clrscr();
+	      cp++;
+	      goto fo6;}
+
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto fo5;}}
+
+fo6 :
+
+	    cout<<"\n K I S/K I S /K O /";
+	    cout<<"\t\t\t\t\t POINTS"<<" : "<<cp;
+	    cout<<" \n     P Y __ __ R/K A __ O O N";
+
+fo7:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='A'||m=='a')
+	    { clrscr();
+	      cp++;
+	      goto fo8;}
+
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto fo7;}}
+
+fo8 :
+	    cout<<"\n K I S/K I S /K O /";
+	    cout<<"\t\t\t\t\t POINTS"<<" : "<<cp;
+	    cout<<" \n    P Y A A R/K A __ O O N";
+
+
+fo9:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='r'||m=='R')
+	    { clrscr();
+	      cp++;
+	      cout<<"\nYOU GOT THAT RIGHT THE MOVIE IS";
+	      cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+	      cout<<"\n\n\n\t\tK I S/K I S/K O/P Y A A R/K A R O O N ";
+	      cout<<"\n\n\n\t\t\tPress Y to continue or N to exit ";
+	      cin>>l;
+		if(l=='y'||l=='Y')
+		 {goto fifth;}
+		else
+		 {goto  start;}   }
+
+	  else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto fo9;}}
+
+
+fifth:      count=0;
+	    clrscr();
+	    cout<<"\n YOUR  MOVIE IS ";
+	    cout<<"\t\t\t\t\t\t   POINTS"<<" : "<<cp;
+	    cout<<"\n\t\tS __ A __ __ T ";
+fi1:
+
+	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='h'||m=='H')
+	    {    clrscr();
+
+		 cp++;
+		 goto fi2;	 }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	      count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto fi1;} }
+
+fi2:
+	    cout<<"\nS H A __ __ T ";
+	    cout<<"\t\t\t\t\t        POINTS"<<" : "<<cp;
+
+fi3:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='p'||m=='P')
+	    {
+	       clrscr();
+	       cp++;
+	       goto fi4;  }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto fi3;}}
+fi4:
+
+	    cout<<"\nS H A P __ T";
+	    cout<<"\t\t\t\t\t        POINTS"<<" : "<<cp;
+fi5:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='a'||m=='A')
+	    { clrscr();
+	      cp++;
+	      cout<<"\nYOU GOT THAT RIGHT THE MOVIE IS";
+	      cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+	      cout<<"\n\n\n\t\t        S H A P A T";
+	      cout<<"\n\n\n\t\t\tPress Y to continue or N to exit ";
+	      cin>>l;
+		if(l=='y'||l=='Y')
+		 {goto sixth;}
+		else
+		 {goto  start;}   }
+
+	  else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto fi5;}}
+
+
+
+sixth:      count=0;
+	    clrscr();
+	    cout<<"\n YOUR MOVIE IS ";
+	    cout<<"\t\t\t\t\t\t   POINTS"<<" : "<<cp;
+	    cout<<"\n\t\t  J __ __ E R";
+si1:
+
+	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='o'||m=='O')
+	    {    clrscr();
+
+		 cp++;
+		 goto si2;	 }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	      count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto si1;} }
+
+si2:
+	    cout<<"\nJ O __ __ R";
+	    cout<<"\t\t\t\t\t          POINTS"<<" : "<<cp;
+
+si3:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='k'||m=='K')
+	    {
+	       clrscr();
+	       cp++;
+	       goto si4;  }
+
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto si3;}}
+
+
+si4 :
+
+	    cout<<"\nJ O K __ R";
+	    cout<<"\t\t\t\t\t          POINTS"<<" : "<<cp;
+si5:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='E'||m=='e')
+	    { clrscr();
+	      cp++;
+	      cout<<"\nYOU GOT THAT RIGHT THE MOVIE IS";
+	      cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+	      cout<<"\n\n\n\t\t       J O K E R";
+	      cout<<"\n\n\n\t\t\tPress Y to continue or N to exit ";
+	      cin>>l;
+		if(l=='y'||l=='Y')
+		 {goto seventh;}
+		else
+		 {goto  start;}   }
+
+	  else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto si5;}}
+
+
+seventh:
+	    count=0;
+	    clrscr();
+	    cout<<"\n YOUR  MOVIE IS ";
+	    cout<<"\t\t\t\t\t\t   POINTS"<<" : "<<cp;
+	    cout<<"\n\t\tS L __ __/D __ __/M __ L L __ __ N R __";
+se1:
+
+	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='u'||m=='U')
+	    {    clrscr();
+
+		 cp++;
+		 goto se2;}
+	    else
+	    {cout<<"\n Wrong one sorry";
+	      count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto se1;} }
+
+se2:
+	    cout<<"\nS L U __/D __ __/M __ L L __ __ N R __";
+	    cout<<"\t\t\t\tPOINTS"<<" : "<<cp;
+
+se3:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='m'||m=='M')
+	    {
+	       clrscr();
+	       cp++;
+	       goto se4; }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto se3;}}
+
+se4 :
+
+	    cout<<"\nS L U M/D __ __/M __ L L __ __ N R __";
+	    cout<<"\t\t\t\tPOINTS"<<" : "<<cp;
+se5 :	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='O'||m=='o')
+	    { clrscr();
+	      cp++;
+	      goto se6;}
+
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto se5;}}
+
+se6 :
+
+	    cout<<"\nS L U M/D O __/M __ L L __ O N R __";
+	    cout<<"\t\t\t\tPOINTS"<<" : "<<cp;
+se7:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='g'||m=='G')
+	    { clrscr();
+	      cp++;
+	      goto se8;}
+
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto se7;}}
+
+se8 :
+
+	    cout<<"\nS L U M/D O G/M __ L L __ __ N R __";
+	    cout<<"\t\t\t\tPOINTS"<<" : "<<cp;
+se9:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='i'||m=='I')
+	    { clrscr();
+	      cp++;
+	     goto se10;}
+
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto se9;}}
+
+
+
+se10 :
+
+	    cout<<"\nS L U M/D O G/M I L L I O N R __";
+	    cout<<"\t\t\t\tPOINTS"<<" : "<<cp;
+se11:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='E'||m=='e')
+	    { clrscr();
+	      cp++;
+	      cout<<"\nYOU GOT THAT RIGHT THE MOVIE IS";
+	      cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+	      cout<<"\n\n\n\t\t    S L U M/D O G/M I L L I O N E R";
+	      cout<<"\n\n\n\t\t\tPress Y to continue or N to exit ";
+	      cin>>l;
+
+	      if(l=='y'||l=='Y')
+		 {goto eight;}
+	      else
+		 {goto  start;}   }
+
+	  else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto se11;}}
+
+
+eight:      count=0;
+	    clrscr();
+	    cout<<"\n YOUR MOVIE IS ";
+	    cout<<"\t\t\t\t\t\t   POINTS"<<" : "<<cp;
+	    cout<<"\n\t\tD __ __ S H __ __ M";
+e1:
+
+	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='R'||m=='r')
+	    {    clrscr();
+
+		 cp++;
+		 goto e2; }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	      count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto e1;} }
+
+e2:
+	    cout<<"\nD R __ S H __ __ M";
+	    cout<<"\t\t\t\t\t         POINTS"<<" : "<<cp;
+
+e3:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='i'||m=='I')
+	    {
+	       clrscr();
+	       cp++;
+	       goto e4; }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto e3;}}
+e4 :
+
+	    cout<<"\nD R I S H __ __ M";
+	    cout<<"\t\t\t\t\t         POINTS"<<" : "<<cp;
+e5:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='y'||m=='Y')
+	    { clrscr();
+	      cp++;
+	      goto e6;}
+
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto e5;}}
+
+e6 :
+
+	    cout<<"\nD R I S H Y __ M";
+	    cout<<"\t\t\t\t\t         POINTS"<<" : "<<cp;
+e7:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='A'||m=='a')
+	    { clrscr();
+	      cp++;
+	      cout<<"\nYOU GOT THAT RIGHT THE MOVIE IS";
+	      cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+	      cout<<"\n\n\n\t\t       D R I S H Y A M";
+	      cout<<"\n\n\n\t\t\tPress Y to continue or N to exit ";
+	      cin>>l;
+		if(l=='y'||l=='Y')
+		 {goto ninth;}
+		else
+		 {goto  start;}   }
+
+	  else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto e7;}}
+
+
+ninth:      count=0;
+	    clrscr();
+	    cout<<"\n YOUR MOVIE IS ";
+	    cout<<"\t\t\t\t\t\t    POINTS"<<" : "<<cp;
+	    cout<<"\n\t\t M __ R __ __ N __";
+n1:
+
+	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='a'||m=='A')
+	    {    clrscr();
+
+		 cp++;
+		 goto n2; }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	      count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto n1;} }
+
+n2:
+	    cout<<"\nM A R __ A N __";
+	    cout<<"\t\t\t\t\t          POINTS"<<" : "<<cp;
+
+n3:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='d'||m=='D')
+	    {
+	       clrscr();
+	       cp++;
+	       goto n4;		  }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto n3;}}
+n4 :
+
+	    cout<<"\nM A R D A N __";
+	    cout<<"\t\t\t\t\t          POINTS"<<" : "<<cp;
+n5:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='I'||m=='i')
+	    { clrscr();
+	      cp++;
+	      cout<<"\nYOU GOT THAT RIGHT THE MOVIE IS";
+	      cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+	      cout<<"\n\n\n\t\t       M A R D A N I";
+	      cout<<"\n\n\n\t\t\tPress Y to continue or N to exit ";
+	      cin>>l;
+		if(l=='y'||l=='Y')
+		 {goto tenth;}
+		else
+		 {goto  start;}   }
+
+	  else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto n5;}}
+
+
+tenth:      count=0;
+	    clrscr();
+	    cout<<"\n YOUR MOVIE IS ";
+	    cout<<"\t\t\t\t\t   POINTS"<<" : "<<cp;
+	    cout<<"\n\t\tS __ A __ __ __ __ N S";
+te1:
+
+	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='h'||m=='H')
+	    {    clrscr();
+
+		 cp++;
+		 goto te2;	 }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	      count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto te1;} }
+
+te2:
+	    cout<<"\nS H A __ __ __ __ N S";
+	    cout<<"\t\t\t\t\t       POINTS"<<" : "<<cp;
+
+te3:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='u'||m=='U')
+	    {
+	       clrscr();
+	       cp++;
+	       goto te4;		  }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto te3;}}
+te4 :
+
+	    cout<<"\nS H A U __ __ __ N S";
+	    cout<<"\t\t\t\t\t      POINTS"<<" : "<<cp;
+te5 :	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='k'||m=='K')
+	    { clrscr();
+	      cp++;
+	      goto te6;}
+
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto te5;}}
+
+te6 :
+
+	    cout<<"\nS H A U K __ __ N S";
+	    cout<<"\t\t\t\t\t     POINTS"<<" : "<<cp;
+te7:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='e'||m=='E')
+	    { clrscr();
+	      cp++;
+	      cout<<"\nYOU GOT THAT RIGHT THE MOVIE IS";
+	      cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+	      cout<<"\n\n\n\t\t       S H A U K E E N S";
+	      cout<<"\n\n\n\t\t\tPress Y to continue or N to exit ";
+	      cin>>l;
+		if(l=='y'||l=='Y')
+		 {goto eleventh;}
+		else
+		 {goto  start;}   }
+
+	  else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto te7;}}
+
+
+eleventh:   count=0;
+	    clrscr();
+	    cout<<"\n YOUR MOVIE IS ";
+	    cout<<"\t\t\t\t\t\t    POINTS"<<" : "<<cp;
+	    cout<<"\n\t\tS H __ __ I __ __ B __";
+el1:
+
+	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='a'||m=='A')
+	    {    clrscr();
+
+		 cp++;
+		 goto el2;}
+	    else
+	    {cout<<"\n Wrong one sorry";
+	      count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto el1;} }
+
+el2:
+	    cout<<"\nS H A __ I __ A B __";
+	    cout<<"\t\t\t\t\t      POINTS"<<" : "<<cp;
+
+el3:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='M'||m=='m')
+	    {
+	       clrscr();
+	       cp++;
+	       goto el4; }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto el3;}}
+el4 :
+
+	    cout<<"\nS H A M I __ A B __";
+	    cout<<"\t\t\t\t\t     POINTS"<<" : "<<cp;
+el5:	    cout<<"\n\nENTER THE  BLANK  : ";
+	    cin>>m;
+	    if(m=='T'||m=='t')
+	    { clrscr();
+	      cp++;
+	      goto el6;}
+
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto el5;}}
+
+el6 :
+
+	    cout<<"\nS H A M I T A B __";
+	    cout<<"\t\t\t\t\t     POINTS"<<" : "<<cp;
+el7:	    cout<<"\n\nENTER THE  BLANK  : ";
+	    cin>>m;
+	    if(m=='H'||m=='h')
+	    { clrscr();
+	      cp++;
+	      cout<<"\nYOU GOT THAT RIGHT THE MOVIE IS";
+	      cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+	      cout<<"\n\n\n\t\t      S H A M I T A B H";
+	      cout<<"\n\n\n\t\t\tPress Y to continue or N to exit ";
+	      cin>>l;
+		if(l=='y'||l=='Y')
+		 {goto twelth;}
+		else
+		 {goto  start;}   }
+
+	  else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto el7;}}
+
+
+twelth:     count=0;
+	    clrscr();
+	    cout<<"\n YOUR MOVIE IS ";
+	    cout<<"\t\t\t\t\t\t   POINTS"<<" : "<<cp;
+	    cout<<"\n\t\tH __ R __ __ __ E";
+tw1:
+
+	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='E'||m=='e')
+	    {    clrscr();
+
+		 cp++;
+		 goto tw2;	 }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	      count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto tw1;} }
+
+tw2:
+	    cout<<"\nH E R __ __ __ E";
+	    cout<<"\t\t\t\t\t     POINTS"<<" : "<<cp;
+
+tw3:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='o'||m=='O')
+	    {
+	       clrscr();
+	       cp++;
+	       goto tw4;}
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto tw3;}}
+tw4 :
+
+	    cout<<"\nH E R O __ __ E";
+	    cout<<"\t\t\t\t\t     POINTS"<<" : "<<cp;
+tw5:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='i'||m=='I')
+	    { clrscr();
+	      cp++;
+	      goto tw6;}
+
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto tw5;}}
+
+tw6 :
+
+	    cout<<"\nH E R O I __ E";
+	    cout<<"\t\t\t\t\t     POINTS"<<" : "<<cp;
+tw7:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='N'||m=='n')
+	    { clrscr();
+	      cp++;
+	      cout<<"\nYOU GOT THAT RIGHT THE MOVIE IS";
+	      cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+	      cout<<"\n\n\n\t\t      H E R O I N E";
+	      cout<<"\n\n\n\t\t\tPress Y to continue or N to exit ";
+	      cin>>l;
+		if(l=='y'||l=='Y')
+		 {goto thirteen;}
+		else
+		 {goto  start;}   }
+
+	  else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto tw7;}}
+
+
+
+thirteen:
+	    count=0;
+	    clrscr();
+	    cout<<"\n YOUR MOVIE IS ";
+	    cout<<"\t\t\t\t\t\t   POINTS"<<" : "<<cp;
+	    cout<<"\n\t\t__ /I __ __ O __ S";
+th1:
+
+	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='3')
+	    {    clrscr();
+
+		 cp++;
+		 goto th2;	 }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	      count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto th1;} }
+
+th2:
+	    cout<<"\n 3 /I __ __ O __ S";
+	    cout<<"\t\t\t\t\t     POINTS"<<" : "<<cp;
+
+th3:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='D'||m=='d')
+	    {
+	       clrscr();
+	       cp++;
+	       goto th4; }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto th3;}}
+th4 :
+
+	    cout<<"\n3 /I D __ O __ S";
+	    cout<<"\t\t\t\t\t     POINTS"<<" : "<<cp;
+th5 :	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='I'||m=='i')
+	    { clrscr();
+	      cp++;
+	      goto th6;}
+
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto th5;}}
+
+th6 :
+
+	    cout<<"\n3 /I D I O __ S";
+	    cout<<"\t\t\t\t\t     POINTS"<<" : "<<cp;
+th7 : 	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='t'||m=='T')
+	    { clrscr();
+	      cp++;
+	      cout<<"\nYOU GOT THAT RIGHT THE MOVIE IS";
+	      cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+	      cout<<"\n\n\n\t\t      3 /I D I O T S";
+	      cout<<"\n\n\n\t\t\tPress Y to continue or N to exit ";
+	      cin>>l;
+		if(l=='y'||l=='Y')
+		 {goto fourteen;}
+		else
+		 {goto  start;}   }
+
+	  else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto th7;}}
+
+
+fourteen :
+	    count=0;
+	    clrscr();
+	    cout<<"\n YOUR MOVIE IS ";
+	    cout<<"\t\t\t\t\t\t    POINTS"<<" : "<<cp;
+	    cout<<"\n\t\t__ E __ R";
+for1:
+
+	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='V'||m=='v')
+	    {    clrscr();
+
+		 cp++;
+		 goto for2;	 }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	      count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto for1;} }
+
+for2 :
+
+	    cout<<"\nV E __ R";
+	    cout<<"\t\t\t\t\t\t    POINTS"<<" : "<<cp;
+for3 :	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='E'||m=='e')
+	    { clrscr();
+	      cp++;
+	      cout<<"\nYOU GOT THAT RIGHT THE MOVIE IS";
+	      cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+	      cout<<"\n\n\n\t\t        V E E R";
+	      cout<<"\n\n\n\t\t\tPress Y to continue or N to exit ";
+	      cin>>l;
+		if(l=='y'||l=='Y')
+		 {goto fifteen;}
+		else
+		 {goto  start;}   }
+
+	  else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto for3;}}
+
+
+fifteen:
+	    count=0;
+	    clrscr();
+	    cout<<"\n YOUR  MOVIE IS ";
+	    cout<<"\t\t\t\t\t\t   POINTS"<<" : "<<cp;
+	    cout<<"\n\t\tC __ I __ A __/ P __ R __ Y";
+
+fio1:
+
+	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='h'||m=='H')
+	    {    clrscr();
+
+		 cp++;
+		 goto fio2;	 }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	      count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto fio1;} }
+
+fio2:
+	    cout<<"\nC H I __ A __/ P __ R __ Y";
+	    cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+
+fio3:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='l'||m=='L')
+	    {
+	       clrscr();
+	       cp++;
+	       goto fio4;  }
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto fio3;}}
+
+fio4 :
+
+	    cout<<"\nC H I L A __/ P __ R __ Y";
+	    cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+fio5:	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='r'||m=='R')
+	    { clrscr();
+	      cp++;
+	      goto fio6;}
+
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto fio5;}}
+
+fio6 :
+
+	    cout<<"\nC H I L A R/ P __ R __ Y";
+	    cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+fio7 :	    cout<<"\n\nENTER THE BLANK  : ";
+	    cin>>m;
+	    if(m=='A'||m=='a')
+	    { clrscr();
+	      cp++;
+	      goto fio8;}
+
+	    else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto fio7;}}
+
+
+fio8 :
+
+	    cout<<"\nC H I L A R/ P A R __ Y";
+	    cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+fio9 :	    cout<<"\n\nENTER THE  BLANK  : ";
+	    cin>>m;
+	    if(m=='T'||m=='t')
+	    { clrscr();
+	      cp++;
+	      cout<<"\nYOU GOT THAT RIGHT THE MOVIE IS";
+	      cout<<"\t\t\t\t\tPOINTS"<<" : "<<cp;
+	      cout<<"\n\n\n\t\t  C H I L A R / P A R T Y";
+	      cout<<"\n\n\n\t\t\t\tPress Enter ";
+	      gets(stk);
+	      goto star;   }
+
+	  else
+	    {cout<<"\n Wrong one sorry";
+	     count++;
+	    if(count>5)
+	      { goto start; }
+
+	    else
+		{goto fio9;}}
+
+
+
+star :
+ cout<<"\n\n\n\n\n\n\n\n\n\t\t       ********  **      *  * * *      ";
+ cout<<"\n\t\t       *         *  *    *  *     *    ";
+ cout<<"\n\t\t       *         *   *   *  *      *   ";
+ cout<<"\n\t\t       ********  *    *  *  *      *   ";
+ cout<<"\n\t\t       *         *     * *  *     *    ";
+ cout<<"\n\t\t       ********  *      **  * * *      ";
+break;
+
+
+case 2: clrscr();
+	cout<<"\n\t\t      T H E   B O L L Y W O O D   G U E S S  ";
+	cout<<"\n\n\n1.BOLLYWOOD GUESS IS JUST A FUN GAME.\n";
+	cout<<"\n2.A MOVIE NAME IS DISPLAYED IN FRONT OF YOU.\n ";
+	cout<<"\n3.SOME OF THE LETTERS ARE NOT DISPLAYED.\n";
+	cout<<"\n4.YOU ARE TO FIND THE MISSING NAMES.\n";
+	cout<<"\n5.YOU GET 1 POINT FOR GUESSING ONE LETTER.\n";
+	cout<<"\n\nPRESS E FOR LIVE DEMO   " ;
+	cin>>zp;
+	if(zp=='E'||zp=='e')
+	{ clrscr();
+	  cout<<"\n\nLETS SHOW YOU A LIVE EXAMPLE ";
+	  cout<<"\n\nGUESS THE MOVIE ";
+	  cout<<"\n\t\t\tF __ L __ U ";
+	  cout<<"\n\nPress Enter";
+	  gets(stk);
+	  cout<<"\n\nEnter the first space : ";
+	  cout<<"  A ";
+	  cout<<"\n\nEnter the second space : ";
+	  cout<<"  T ";
+	  cout<<"\n\nEnter the third space : ";
+	  cout<<"  U ";
+	  cout<<"\n\nPRESS ENTER ";
+	  gets(stk);
+	  clrscr();
+	  cout<<"\nTHE MOVIE IS F A L T  U";
+	  gets(stk);
+	  goto start; }
+	  else
+	  {exit(0);};break;
+
+ case 3:
+	 clrscr();
+	 cout<<"\n\t\t      T H E   B O L L Y W O O D   G U E S S";
+	 cout<<"\n\n\n\nDeveloped By :  \n ";
+	 cout<<" \t\tA S H I S H G U P T A ";
+	 cout<<"\n\nDesigned By  : \n ";
+	 cout<<"\t\tA S H I S H G U P T A ";
+	 cout<<"\n\nThanks To : ";
+	 cout<<"\n\t\tTURBO C+";
+	 cout<<"\n\n\n\t\t\t\tPRESS ENTER ";
+	 gets(stk);
+	 goto start;break;
+
+case 5:exit(0);break;
+
+
+
+
+default : goto start; }
+ getch();
+ }
+
+
