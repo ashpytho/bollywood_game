@@ -1,8 +1,6 @@
 #include<iostream.h>
 #include<conio.h>
 #include<stdlib.h>
-#include<stdio.h>
-#include<process.h>
 void main()
 {clrscr();
  int q,count=0,cp=0,i;
